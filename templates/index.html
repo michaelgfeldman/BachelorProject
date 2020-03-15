@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AES System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main-page">
+        <div id="main-div" class="main-content">
+            <div class="top-half">
+                <h1>Michael's Feldman thesis project</h1>
+                <p><i>It's an Automated Essay Scoring System. You can paste your essay here and the API will try and predict your score</i></p>
+            </div>
+            <div class="bottom-half">
+                <div class="bottom-input">
+                    <div class="input-div">
+                        <form id="input-form" class="input-form" action="{{ url_for('predict')}}" method="post">
+                            <textarea id="input_text" name="input_text" placeholder="Type something!"></textarea>
+                            <button type="submit" class="pred-btn btn btn-primary btn-block btn-large">Score!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
