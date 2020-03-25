@@ -47,7 +47,7 @@ fig, ax = plt.subplots(4,2, figsize=(9,9), sharey=False)
 for i in range(4):
     for j in range(2):
         topic_number += 1
-        essays[essays['essay_set'] == topic_number]            .groupby('domain1_score')['essay_set'].agg('count')            .plot.bar(ax=ax[i, j], rot=0)
+        essays[essays['essay_set'] == topic_number].groupby('domain1_score')['essay_set'].agg('count').plot.bar(ax=ax[i, j], rot=0)
         ax[i,j].set_title('Topic %i' % topic_number)
 ax[3,0].locator_params(nbins=10)
 ax[3,1].locator_params(nbins=10)
