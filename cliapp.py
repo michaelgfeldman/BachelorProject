@@ -107,13 +107,13 @@ all_features = np.array([sentences_count,words_count,unique_words_count,punctuat
 
 #loading trained model and all the transformers
 if essay_type == '1':
-    model = np.load('persuasive_model.pkl',allow_pickle=True)
+    model = np.load('pickles/persuasive_model.pkl',allow_pickle=True)
     tv = np.load('pickles/persuasive_vectorizer.pkl',allow_pickle=True)
     pca = np.load('pickles/persuasive_pca.pkl',allow_pickle=True)
     scaleer = np.load('pickles/persuasive_scaleer.pkl',allow_pickle=True)
     selector =  np.load('pickles/persuasive_selector.pkl',allow_pickle=True)
 if essay_type == '2':
-    model = np.load('critical_model.pkl',allow_pickle=True)
+    model = np.load('pickles/critical_model.pkl',allow_pickle=True)
     tv = np.load('pickles/critical_vectorizer.pkl',allow_pickle=True)
     pca = np.load('pickles/critical_pca.pkl',allow_pickle=True)
     scaleer = np.load('pickles/critical_scaleer.pkl',allow_pickle=True)
