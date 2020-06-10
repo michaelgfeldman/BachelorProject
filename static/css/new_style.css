@@ -4,13 +4,14 @@
 }
 @font-face {
   font-family: mySecondFont;
-  src: url(font2.ttf);
+  src: url(font3.ttf);
 }
 
 html, body{
   top: 0px;
   left: 0px;
   margin: 0;
+  background-image: linear-gradient(45deg, #202529 0%, #1e242b 100%);
 }
 .main-page{
   display: flex;
@@ -18,28 +19,37 @@ html, body{
   align-items: center;
   width: 100%;
   height: 100vh;
+  margin: 50px 0;
 }
 
 .main-content{
-  width: 1000px;
-  height: 600px;
+  
+  max-width: 840px;
+  width: 55%;
   background-image: linear-gradient(45deg, #161a1f 0%, #2d3339 100%);
   border-radius: 50px;
   padding: 40px;
   box-sizing: border-box;
+  -webkit-box-shadow: 6px 6px 14px 4px rgba(0,0,0,0.51);
+  -moz-box-shadow: 6px 6px 14px 4px rgba(0,0,0,0.51);
+  box-shadow: 6px 6px 14px 4px rgba(0,0,0,0.51);
 }
 
 .header{
   color: #fff;
-  line-height: 2px;
   font-family: myFirstFont;
   font-size: 32px;
+  line-height: 36px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 10px;
 }
 
 .type{
   color: #fff;
   font-family: myFirstFont;
   font-size: 25px;
+  line-height: 30px;
 }
 
 #radio{
@@ -49,19 +59,24 @@ html, body{
 }
 
 .textarea_container{
+  margin-top: 20px;
   background-color: #fff;
-  width: 920px;
-  height: 340px;
+  width: 100%;
+  height: 310px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  background-color: #1a1f23;
+
 }
 
 textarea{
-  width: 900px;
-  height: 320px;
+  width: 96%;
+  height: 94%;
   box-sizing: border-box;
   padding: 20px;
   font-size: 15px;
@@ -72,23 +87,29 @@ textarea{
   resize: none;
   font-family: mySecondFont;
   line-height: 20px;
+  background: rgba(0,0,0,0);
+  color: rgb(190, 190, 190);
+}
+.textarea_container:focus{
+  box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, .6);
 }
 
 .submit_button{
   font-family: myFirstFont;
-  margin: 25px 0;
+  /* margin: 25px 0; */
   height: 50px;
   width: 150px;
   border-radius: 12px;
   border: none;
   box-sizing: border-box;
   font-size: 22px;
+  line-height: 20px;
   outline: none;
   background-image: linear-gradient(225deg, #9d5ece 0%, #4d1a9e 100%);
   color: #fff;
-  -webkit-box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.51);
-  -moz-box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.51);
-  box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.51);
+  -webkit-box-shadow: 3px 3px 6px 4px rgba(0,0,0,0.51);
+  -moz-box-shadow: 3px 3px 6px 4px rgba(0,0,0,0.51);
+  box-shadow: 3px 3px 6px 4px rgba(0,0,0,0.51);
 }
 
 .submit_button:hover{
@@ -107,8 +128,40 @@ textarea{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 25px 0 0;
 }
 
 .output{
   display: inline;
 }
+
+.details{
+  font-size: 20px;
+  color: #fff;
+  font-family: myFirstFont;
+}
+
+#other{
+  display: none;
+}
+
+.list{
+  padding: 0 !important;
+}
+
+.summary{
+  margin-bottom: 15px;
+  color: rgb(195, 112, 243);
+}
+ul>li{
+  line-height: 23px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+ul > li:before{
+  content: " " !important;
+}
+/* .description_text{
+  overflow: scroll;
+  height: 300px;
+} */
