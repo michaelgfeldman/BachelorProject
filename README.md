@@ -1,4 +1,12 @@
-# University Thesis Work
-Automated essay scoring (AES) is the use of specialized computer programs to assign grades to essays written in an educational setting. It is a of educational assessment and an application of natural language processing. Its objective is to classify a large set of textual entities into a small number of discrete categories, corresponding to the possible grades—for example, the numbers 1 to 6. Therefore, it can be considered a problem of statistical classification.
+# University Bachelor's Thesis Project
+The aim of this thesis is to solve the problem of Automated Essay Scoring,
+using natural-language processing (NLP). Due to the fact that in recent years the
+interest in self-education and Massive Open Online Courses (MOOC) is constantly
+growing, systems that are able to deliver automation in academic progress
+evaluation are gaining popularity. Obviously, such systems can not only reduce the
+cost of online education but also radically reduce the time spent on task scoring.
 
-Several factors have contributed to a growing interest in AES. Among them are cost, accountability, standards, and technology. Rising education costs have led to pressure to hold the educational system accountable for results by imposing standards. The advance of information technology promises to measure educational achievement at reduced cost.
+In this work, the methods of text pre-processing, feature engineering, text
+vectorization, feature selection, cross-validation, ensemble methods, and supervised
+learning classification were implemented. The performance of the final model was
+evaluated using Cohen's kappa coefficient.
