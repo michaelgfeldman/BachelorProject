@@ -1,5 +1,5 @@
 nltk==3.4.5
 spacy==2.2.4
 numpy==1.18.1
-en-core-web-sm==2.2.5
+-e https://github.com/explosion/spacy-models/releases/download/en_vectors_web_lg-2.2.5/en_vectors_web_lg-2.5.5.tar.gz#egg=en_core_web_sm
 Flask==1.1.1
