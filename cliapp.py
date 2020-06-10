@@ -1,17 +1,10 @@
 #importing all the nedded libs
-import warnings
-warnings.filterwarnings('ignore')
-import numpy as np
-import pandas as pd
-import spacy
-from sklearn.decomposition import TruncatedSVD
-from sklearn.preprocessing import StandardScaler
-from sklearn import preprocessing
-from sklearn.feature_extraction.text import TfidfVectorizer
-import en_core_web_sm
-from spacy.lang.en.stop_words import STOP_WORDS
-from string import punctuation
 import nltk
+import spacy
+import numpy as np
+import en_core_web_sm
+from string import punctuation
+from spacy.lang.en.stop_words import STOP_WORDS
 
 #Starting the app + constants
 print('Программа оценки эссе')
