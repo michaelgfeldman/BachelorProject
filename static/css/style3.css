@@ -1,0 +1,114 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(font.ttf);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(font2.ttf);
+}
+
+html, body{
+  top: 0px;
+  left: 0px;
+  margin: 0;
+}
+.main-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-content{
+  width: 1000px;
+  height: 600px;
+  background-image: linear-gradient(45deg, #161a1f 0%, #2d3339 100%);
+  border-radius: 50px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.header{
+  color: #fff;
+  line-height: 2px;
+  font-family: myFirstFont;
+  font-size: 32px;
+}
+
+.type{
+  color: #fff;
+  font-family: myFirstFont;
+  font-size: 25px;
+}
+
+#radio{
+  height: 21px;
+  width: 21px;
+  margin-right: 10px;
+}
+
+.textarea_container{
+  background-color: #fff;
+  width: 920px;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.8);
+}
+
+textarea{
+  width: 900px;
+  height: 320px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 800;
+  outline: none;
+  border: none;
+  resize: none;
+  font-family: mySecondFont;
+  line-height: 20px;
+}
+
+.submit_button{
+  font-family: myFirstFont;
+  margin: 25px 0;
+  height: 50px;
+  width: 150px;
+  border-radius: 12px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 22px;
+  outline: none;
+  background-image: linear-gradient(225deg, #9d5ece 0%, #4d1a9e 100%);
+  color: #fff;
+  -webkit-box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.51);
+  -moz-box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.51);
+  box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.51);
+}
+
+.submit_button:hover{
+  background-image: linear-gradient(225deg, #c476ff 0%, #6925d6 100%);
+}
+
+.result{
+  color: #fff;
+  font-size: 22px;
+  font-family: myFirstFont;
+  display: inline;
+}
+
+.bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.output{
+  display: inline;
+}

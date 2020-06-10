@@ -115,7 +115,7 @@ def predict():
     
     prediction = get_prediction(essay_example, words_english, correct_words_set, lematizator, model, tv, pca, scaleer, selector)
     
-    return render_template('index.html', prediction_text='Предпологаемая оценка данного эссе по 12-ти бальной шкале: {}'.format(prediction))
+    return render_template('index.html', prediction_text='{}'.format(prediction))
 
 @app.route('/results',methods=['POST'])
 def results():
