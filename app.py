@@ -1,7 +1,6 @@
 #importing all the nedded libs
 import nltk
 import spacy
-import pickle
 import numpy as np
 import en_core_web_sm
 from string import punctuation

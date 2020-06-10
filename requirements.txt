@@ -1,0 +1,5 @@
+nltk==3.4.5
+spacy==2.2.4
+numpy==1.18.1
+en-core-web-sm==2.2.5
+Flask==1.1.1
